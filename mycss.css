@@ -1,0 +1,206 @@
+/*font-family: 'Rubik', sans-serif;*/
+:root{
+    --black:#0B132A;
+    --gray:#4F5665;
+    --gray-bg:#F6F6F6;
+    --red:#F53855;
+    --red-btn:#F53838;
+    --light-red:#FFECEC;
+    
+}
+*{
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+}
+body {
+    overflow-x: hidden;
+  }
+  .hidden-thing {
+    position: absolute;
+    left: 100%;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+.fw-medium{
+    font-weight: 500;
+}
+
+nav a{
+    color: var(--black) !important;
+}
+.signUpBtn{
+    border-radius: 50px  !important;
+    width: 150px !important;
+    height: 45px !important;
+    margin-left: 30px !important;
+    color:var(--red)  !important;
+}
+.signUpBtn:hover,.signUpBtn:active,.signUpBtn:visited{
+    color:var(--red)  !important;
+}
+.signUpBtn:hover span{
+    color: white;
+}
+
+.heroSection{
+    margin-top: 89px;
+}
+.imgField{
+    right: 30px !important;
+}
+.btnGetStarted{
+    /*width: 250px !important;
+    height: 60px  !important;*/
+    border-radius: 10px  !important;
+}
+.heroIcons{
+    margin-top: 105px;
+}
+.heroIcons span{
+    background-color: var(--light-red)  !important;
+}
+.heroIcons div i{
+    color: var(--red-btn);
+}
+
+.featureSection{
+    margin-top: 95px;
+}
+
+
+/*ul.featureList li::before{
+    content: url(images/listImg.svg);
+    position: absolute;
+    left: 0;
+}*/
+
+.planSection{
+    margin-top: 200px;
+    background-color: var(--gray-bg);
+}
+.planSection .card ul{
+    position: relative;
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+}
+.planSection .card li{
+    padding-left: 30%;
+}
+.planSection .card li::before{
+    content: url(images/cardCheck.svg);
+    position: absolute;
+    margin-left: -2.5em;
+    width: 1em;
+}
+
+.showCaseSection{
+    padding-top: 150px;
+    background-color: var(--gray-bg);
+    
+}
+img.hugeGlobal{
+    padding-top: 150px;
+}
+
+.customerSection{
+    padding-top: 75px;
+    background-color: var(--gray-bg);
+    padding-bottom: 125px;
+}
+#carouselExampleControls .carousel-indicators{
+    position: relative;
+    margin-top: 2%;
+}
+#carouselExampleControls .carousel-indicators button{
+    background-color: var(--red);
+    border:0px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+#carouselExampleControls .carousel-indicators .active{
+    width: 40px;
+    height: 15px;
+    border-radius: 15px;
+    transition: all ease-in-out 0.5s;
+}
+#carouselExampleControls .carouselButtons{
+    position: relative;
+    margin-top: 5%;
+}
+#carouselExampleControls button{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background-color: var(--red-btn);
+    position: relative;
+}
+#carouselExampleControls  .carousel-control-prev{
+    margin: 0 10px;
+}
+#carouselExampleControls  .carousel-control-next{
+    margin: 0 10px;
+}
+.subscribeSection{
+    margin-top: 0px;
+    position: relative;
+    top: -120px;
+    background-color:var(--gray-bg);
+}
+.subscribeDiv{
+    border-radius: 10px;
+    position: relative;
+    top: 180px;
+    z-index: 2;
+}
+.customDangerBtn{
+    box-sizing: border-box;
+    padding: 15px 80px;
+    border-radius: 15px;
+}
+.footerSection{
+    background-color: #f8f8f8ad;
+    position: relative;
+    top: -0px;
+    padding: 200px  0px;
+    padding-bottom: 10px;
+}
+footer dd a{
+    color: var(--black) !important;
+    text-decoration: none;
+}
+footer a{
+    cursor: pointer;
+    pointer-events: auto;
+}
+footer dt{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    ul.featureList li{
+        position: relative;
+    } 
+    ul.featureList li::before {
+        content: url(images/listImg.svg);
+        display: inline-block;
+        margin-right: 1em;
+        vertical-align: middle;        
+    }
+}
+@media screen and  (min-width: 577px){
+    ul.featureList{
+        position: relative;
+        list-style: none;
+        margin-left: 0;
+        padding-left: 1.8em;
+    }
+    ul.featureList li::before{
+        content: url(images/listImg.svg);
+        position: absolute;
+        left: 0;
+    }
+    
+}
